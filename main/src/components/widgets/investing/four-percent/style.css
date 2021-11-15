@@ -1,4 +1,9 @@
+.container {
+	position: relative;
+}
+
 .fourpercent {
+	background-color: #f2f2f2;
 	padding: 100px 20px;
 	min-height: 100%;
 	width: 100%;
