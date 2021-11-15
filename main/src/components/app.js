@@ -1,23 +1,19 @@
 import { h } from "preact";
 import { Router } from "preact-router";
-
 import Header from "./header";
 
 // Code-splitting is automated for `routes` directory
-import All from "../routes/all";
-import Profile from "../routes/profile";
-import FourPercentCalc from "../routes/four-percent";
-import Car from "../routes/car";
+import Dashboard from "../routes/dashboard";
+import Investing from "../routes/investing";
+import Cars from "../routes/cars";
 
 const App = () => (
   <div id="app">
     <Header />
     <Router>
-      <All path="/" />
-      <Car path="/car/" />
-      <FourPercentCalc path="/four-percent/" />
-      <Profile path="/profile/" user="me" />
-      <Profile path="/profile/:user" />
+      <Dashboard path="/" />
+      <Cars path="/cars/" />
+      <Investing path="/investing/" />
     </Router>
   </div>
 );
